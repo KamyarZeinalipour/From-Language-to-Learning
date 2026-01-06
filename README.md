@@ -1,11 +1,9 @@
-
 # 🎓 From Language to Learning
 ### An LLM-Driven Framework for Multilingual Educational Content
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Datasets%20%26%20Models-blue)](https://huggingface.co/Kamyar-zeinalipour)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![Thesis](https://img.shields.io/badge/PhD-Thesis-green)]()
 
 **Official Artifact Repository** for the PhD Thesis: *"From Language to Learning: An LLM-Driven Framework for Multilingual Educational Content."*
 
@@ -13,9 +11,8 @@
 
 ## 📖 Overview
 
-This repository houses the **System Prompts**, **Filtering Scripts**, and **Reproducibility Artifacts** for a unified framework capable of generating high-quality educational content across **5 languages** and **3 pedagogical domains**.
+This repository contains the **System Prompts**, **Filtering Scripts**, and **Reproducibility Artifacts** for the "From Language to Learning" framework. This work utilizes a two-stage distillation process (Teacher $\rightarrow$ Student) to generate high-quality educational content across **5 languages** (English, Italian, Turkish, Arabic, Persian) and **3 pedagogical domains**:
 
-The framework utilizes a two-stage distillation process (Teacher $\rightarrow$ Student) to create specialized open-source models for:
 1.  🧩 **Gamified Learning:** Educational Crossword Generation.
 2.  📝 **Formal Assessment:** Multiple-Choice & Short-Answer Quizzes.
 3.  ✍️ **Pedagogical Intervention:** Automated Syntax Feedback.
@@ -24,7 +21,7 @@ The framework utilizes a two-stage distillation process (Teacher $\rightarrow$ S
 
 ## 🌍 Part I: Multilingual Crossword Generation
 
-We release the **Instruct-Series** datasets (text-to-clue) and **Legacy** datasets (answer-to-clue), along with fine-tuned models for English, Italian, Arabic, and Turkish.
+We release the **Instruct-Series** datasets (text-to-clue) and **Legacy** datasets (answer-to-clue), along with fine-tuned models.
 
 ### 🇺🇸 English (Chapter 4)
 *   **Methodology:** Context-grounded clue generation via instruction tuning.
@@ -94,12 +91,12 @@ Specialized models for generating assessment items in low-resource languages.
 
 ---
 
-## 🛠️ Reproducibility & Structure
+## 🛠️ Repository Structure
 
-The repository is organized to mirror the thesis structure. Each folder contains the specific system prompts (JSON templates) and sample I/O used to generate the **Instruct** datasets.
+The repository mirrors the thesis structure. Each folder contains the specific system prompts (JSON templates) and sample I/O used to generate the **Instruct** datasets.
 
 ```text
-.
+From-Language-to-Learning/
 ├── Part_I_Crosswords/
 │   ├── English/   # Clue-Instruct Prompts
 │   ├── Italian/   # Style-Specific Prompts
@@ -112,8 +109,8 @@ The repository is organized to mirror the thesis structure. Each folder contains
     └── English_Syntax/ # Feedback Schema Prompts
 ```
 
-### Note on Filtering
-Filtering scripts (e.g., removing text < 50 words, filtering keywords 3-20 chars) are described in the methodology sections of the respective papers and implemented in the linked GitHub repositories for each language.
+### Reproducibility Note
+The filtering logic (e.g., removing text < 50 words, filtering keywords 3-20 chars) and data processing scripts are documented in the methodology sections of the thesis and implemented in the linked GitHub repositories for each language.
 
 ---
 
@@ -131,3 +128,7 @@ If you use these resources in your research, please cite the thesis or the relev
 ```
 
 *Individual paper citations can be found in the `CITATIONS.md` file.*
+
+## License
+The code and scripts in this repository are licensed under the **MIT License**. The datasets and prompts released as part of this thesis are licensed under **CC BY 4.0**.
+```
