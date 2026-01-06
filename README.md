@@ -1,6 +1,3 @@
-Here is a "fancy," professional `README.md` designed for your GitHub repository. It aggregates all the artifacts, links, and models extracted from your papers and thesis structure, utilizing badges, emojis, and tables for better readability.
-
-***
 
 # 🎓 From Language to Learning
 ### An LLM-Driven Framework for Multilingual Educational Content
